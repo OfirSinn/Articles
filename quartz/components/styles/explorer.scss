@@ -18,13 +18,13 @@ button#explorer {
   }
 
   & .fold {
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     transition: transform 0.3s ease;
     opacity: 0.8;
   }
 
   &.collapsed .fold {
-    transform: rotateZ(-90deg);
+    transform: rotateZ(+90deg);
   }
 }
 
