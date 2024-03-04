@@ -14,6 +14,7 @@ export interface CalloutTranslation {
   bug: string
   example: string
   quote: string
+  bible: string
 }
 
 export interface Translation {

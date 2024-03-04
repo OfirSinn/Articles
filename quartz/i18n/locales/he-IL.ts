@@ -20,6 +20,7 @@ export default {
       bug: "באג",
       example: "דוגמא",
       quote: "ציטוט",
+      bible: "כתובים",
     },
     backlinks: {
       title: "קישורי חזרה",
