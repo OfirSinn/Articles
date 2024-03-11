@@ -20,6 +20,7 @@ export default {
       bug: "Баг",
       example: "Пример",
       quote: "Цитата",
+      bible: "bible",
     },
     backlinks: {
       title: "Обратные ссылки",

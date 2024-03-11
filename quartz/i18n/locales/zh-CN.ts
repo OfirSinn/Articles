@@ -20,6 +20,7 @@ export default {
       bug: "错误",
       example: "示例",
       quote: "引用",
+      bible: "bible",
     },
     backlinks: {
       title: "反向链接",

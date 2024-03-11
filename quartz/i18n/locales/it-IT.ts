@@ -20,6 +20,7 @@ export default {
       bug: "Bug",
       example: "Esempio",
       quote: "Citazione",
+      bible: "bible",
     },
     backlinks: {
       title: "Link entranti",

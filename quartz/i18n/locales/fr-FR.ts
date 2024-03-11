@@ -20,6 +20,7 @@ export default {
       bug: "Bogue",
       example: "Exemple",
       quote: "Citation",
+      bible: "bible",
     },
     backlinks: {
       title: "Liens retour",
