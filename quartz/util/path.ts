@@ -98,9 +98,6 @@ export function transformInternalLink(link: string): RelativeURL {
 	const joined = joinSegments(stripSlashes(prefix), stripSlashes(simpleSlug));
 	const trail = folderPath ? "/" : "";
 	const res = (_addRelativeToStart(joined) + trail + anchor) as RelativeURL;
-	if(!res.search("ofirsinn.github.io/Articles")){
-		res.replace("ofirsinn.github.io/","ofirsinn.github.io/Articles/")
-	}
 	return res;
 }
 
