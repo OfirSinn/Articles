@@ -201,34 +201,26 @@ export interface TransformOptions {
 }
 
 export function transformLink(src: FullSlug, target: string, opts: TransformOptions): RelativeURL {
-	const targetSlug = transformInternalLink(target);
+    const targetSlug = transformInternalLink(target);
 
-	if (opts.strategy === "relative") {
-		return targetSlug as RelativeURL;
-	} else {
-		const folderTail = isFolderPath(targetSlug) ? "/" : "";
-		const canonicalSlug = stripSlashes(targetSlug.slice(".".length));
-		const [targetCanonical, targetAnchor] = splitAnchor(canonicalSlug);
-
-		if (opts.strategy === "shortest") {
-			// if the file name is unique, then it's just the filename
-			const matchingFileNames = opts.allSlugs.filter((slug) => {
-				const parts = slug.split("/");
-				const fileName = parts.at(-1);
-				return targetCanonical === fileName;
-			});
-
-			// only match, just use it
-			if (matchingFileNames.length === 1) {
-				const targetSlug = matchingFileNames[0];
-				return (resolveRelative(src, targetSlug) + targetAnchor) as RelativeURL;
-			}
-		}
-
-		// if it's not unique, then it's the absolute path from the vault root
-		return (joinSegments(pathToRoot(src), canonicalSlug) + folderTail) as RelativeURL;
-	}
+    if (opts.strategy === "relative") {
+        return targetSlug as RelativeURL;
+    } else {
+        // Get the folder part of the target URL
+        const targetFolder = targetSlug.endsWith('/') ? targetSlug : targetSlug.replace(/\/[^/]+$/, '/');
+        
+        // Convert targetFolder to FullSlug
+        const folderSlug: FullSlug = targetFolder as FullSlug;
+        
+        // Resolve the relative URL between the source document and the target folder
+        const relativeUrl = resolveRelative(src, folderSlug);
+        
+        // Append the target page part to the resolved relative URL
+        return (relativeUrl + targetSlug.split('/').pop()) as RelativeURL;
+    }
 }
+
+
 
 // path helpers
 function isFolderPath(fplike: string): boolean {
