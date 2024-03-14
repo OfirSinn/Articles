@@ -40,10 +40,6 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Pr
 			{list.map((page) => {
 				const title = page.frontmatter?.title;
 				const tags = page.frontmatter?.tags ?? [];
-				const tikun = resolveRelative(fileData.slug!, page.slug!)
-				if(!tikun.search("ofirsinn.github.io/Articles")){
-					tikun.replace("ofirsinn.github.io/","ofirsinn.github.io/Articles/")
-				}
 
 				return (
 					<li class="section-li">
@@ -55,7 +51,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit }: Pr
 							)}
 							<div class="desc">
 								<h3>
-									<a href={tikun} class="internal">
+									<a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
 										{title}
 									</a>
 								</h3>
