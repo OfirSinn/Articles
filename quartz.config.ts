@@ -15,7 +15,7 @@ const config: QuartzConfig = {
 		analytics: {
 			provider: "plausible",
 		},
-		baseUrl: "www.ofirsinn.github.io/Articles",
+		baseUrl: "ofirsinn.github.io/Articles",
 		ogImageDir: "_assets/img",
 		ignorePatterns: ["private", "templates", ".obsidian"],
 		defaultDateType: "modified",
