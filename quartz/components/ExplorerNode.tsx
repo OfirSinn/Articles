@@ -235,7 +235,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
 							<div key={node.name} data-folderpath={folderPath}>
 								{folderBehavior === "link" ? (
 									<a
-										href={resolveRelative(fileData.slug!, (folderPath.endsWith('/') ? folderPath : folderPath + '/') as SimpleSlug)}
+										href={resolveRelative(fileData.slug!, folderPath as SimpleSlug)}
 										data-for={dataForSanitized}
 										// data-hasicon={hasIcon}
 										// data-icon={iconPath}
