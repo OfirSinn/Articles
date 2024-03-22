@@ -98,6 +98,9 @@ export function transformInternalLink(link: string): RelativeURL {
 	const joined = joinSegments(stripSlashes(prefix), stripSlashes(simpleSlug));
 	const trail = folderPath ? "/" : "";
 	const res = (_addRelativeToStart(joined) + trail + anchor) as RelativeURL;
+	// if(!res.search){
+	// 	res.replace("ofirsinn.github.io/","ofirsinn.github.io/Articles")
+	// }
 	return res;
 }
 
@@ -162,12 +165,7 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
 }
 
 export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug): RelativeURL {
-	let res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL;
-	    // Ensure that the path starts with "/Articles/"
-		if (!res.startsWith('/Articles/')) {
-			res = isRelativeURL('/Articles/') + res;
-		}
-		// Now resolve the relative path as before
+	const res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL;
 	return res;
 }
 
