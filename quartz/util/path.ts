@@ -162,7 +162,12 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
 }
 
 export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug): RelativeURL {
-	const res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL;
+	let res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL;
+	    // Ensure that the path starts with "/Articles/"
+		if (!res.startsWith('/Articles/')) {
+			res = isRelativeURL('/Articles/') + res;
+		}
+		// Now resolve the relative path as before
 	return res;
 }
 
