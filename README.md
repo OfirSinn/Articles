@@ -1,18 +1,23 @@
-# Quartz v4
+# This is my Blog site.
+this site is as the title says, for articles.
+and it uses [Quartz 4](https://quartz.jzhao.xyz/) as its base, with a few modifications.
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+## The mods:
+- RTL for the entire site
+- an Hamburger menu for navigation on mobile,
+	the Hamburger menu is ripped from [owly-lab](https://github.com/Lisandra-dev/owlly-lab) 
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+## Bug tracker
+RTL compatibility issues:
+	*non known yet*
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Hamburger menu:
+- [ ] sliding is not smooth
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+General
+- [ ] sub folders do not work, the pathing is bugged out.
 
-## Sponsors
+## plan for future.
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+this is just a starting point and unfortunately the lack of built in Hamburger menu for mobile made it quite a pain and very very buggy to install. 
+There is a very Good chance I'll switch to Hugo or another SSG which knows how to deal with RTL and has a proper mobile experience, since in the end although im most familiar with obsidian flavored markdown I can see myself using something else.
