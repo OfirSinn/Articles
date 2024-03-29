@@ -18,7 +18,7 @@ Hamburger menu:
 
 General
 - [x] sub folders do not work, the pathing is bugged out.
-- [ ] in the landscape mode on mobile the page title takes up most of the screen - would be great if it was toggleable.
+- [x] in the landscape mode on mobile the page title takes up most of the screen - would be great if it was toggleable.
 
 ## plan for future.
 
