@@ -1,3 +1,5 @@
+[the site](https://ofirsinn.github.io/Articles/)
+
 # This is my Blog site.
 this site is as the title says, for articles.
 and it uses [Quartz 4](https://quartz.jzhao.xyz/) as its base, with a few modifications.
@@ -15,7 +17,7 @@ Hamburger menu:
 - [ ] sliding is not smooth
 
 General
-- [ ] sub folders do not work, the pathing is bugged out.
+- [x] sub folders do not work, the pathing is bugged out.
 
 ## plan for future.
 
