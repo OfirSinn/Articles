@@ -44,8 +44,14 @@ ol.overflow {
   }
 }
 
+
 .page .page-header {
-  position: sticky;
+  @media all and (max-height: $mobileLandscapeBreakpoint){
+      position: relative; 
+  }
+  @media all and (min-height: $mobileLandscapeBreakpoint){
+    position: sticky; 
+  }
   top: 0;
   border-bottom: 1px solid var(--lightgray);
   background-color: var(--light);
