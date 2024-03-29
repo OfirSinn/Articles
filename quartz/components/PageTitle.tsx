@@ -16,12 +16,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 PageTitle.css = `
 .page-title {
   margin: 0;
-  <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif Hebrew">
-  <style>
-	font-family: Noto Serif Hebrew;
-  </style>
-  </head>
+  font-family: Noto Serif Hebrew;
 }
 `;
 
