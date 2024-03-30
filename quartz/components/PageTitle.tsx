@@ -16,8 +16,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 PageTitle.css = `
 .page-title {
   margin: 0;
-  font-family: Noto Serif Hebrew;
 }
 `;
-
+//   font-family: Noto Serif Hebrew;
 export default (() => PageTitle) satisfies QuartzComponentConstructor;
