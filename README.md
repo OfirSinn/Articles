@@ -19,6 +19,7 @@ Hamburger menu:
 General
 - [x] sub folders do not work, the pathing is bugged out.
 - [x] in the landscape mode on mobile the page title takes up most of the screen - would be great if it was toggleable.
+- [ ] clicking on a header scrolls beyond the header instead of to it. (problem for TOC too)
 
 ## plan for future.
 

@@ -23,8 +23,8 @@ export default {
       bible: "כתובים",
     },
     backlinks: {
-      title: "קישורי חזרה",
-      noBacklinksFound: "לא נמצאו קישורי חזרה",
+      title: "עמודים המציינים את העמוד הזה",
+      noBacklinksFound: "עמוד זה לא מצויין באף עמוד אחר",
     },
     themeToggle: {
       lightMode: "Light mode",
