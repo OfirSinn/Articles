@@ -55,7 +55,7 @@ export default {
       title: "תוכן עניינים",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `${minutes} min read`,
+      readingTime: ({ minutes }) => `זמן קריאה משעורך: ${minutes} דקות`,
     },
   },
   pages: {
@@ -66,6 +66,7 @@ export default {
     error: {
       title: "לא נמצא",
       notFound: "דף זה פרטי או שלא קיים.",
+      home: "חזור לדף הבית"
     },
     folderContent: {
       folder: "תיקייה",

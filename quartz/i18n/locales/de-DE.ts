@@ -20,7 +20,7 @@ export default {
       bug: "Fehler",
       example: "Beispiel",
       quote: "Zitat",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "Backlinks",
@@ -66,6 +66,7 @@ export default {
     error: {
       title: "Nicht gefunden",
       notFound: "Diese Seite ist entweder nicht öffentlich oder existiert nicht.",
+      home: "Return to Homepage",
     },
     folderContent: {
       folder: "Ordner",

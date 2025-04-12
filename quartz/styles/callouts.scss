@@ -10,7 +10,7 @@
   transition: max-height 0.3s ease;
   box-sizing: border-box;
 
-  & > *:nth-child(2) {
+  & > .callout-content > :first-child {
     margin-top: 0;
   }
 
@@ -36,18 +36,18 @@
     --callout-icon: var(--callout-icon-note);
   }
 
-  &[data-callout='bible'] {
-    --color: var(--secondary);
-    --border: #84848244;
-    --bg: #cccccc10;
-    --callout-icon: var(--callout-icon-quote);
-  }
-  
   &[data-callout="abstract"] {
     --color: #00b0ff;
     --border: #00b0ff44;
     --bg: #00b0ff10;
     --callout-icon: var(--callout-icon-abstract);
+  }
+
+  &[data-callout='bible'] {
+    --color: var(--secondary);
+    --border: #84848244;
+    --bg: #cccccc10;
+    --callout-icon: var(--callout-icon-quote);
   }
 
   &[data-callout="info"],
@@ -121,7 +121,7 @@
   }
 
   &.is-collapsed > .callout-title > .fold-callout-icon {
-    transform: rotateZ(-90deg);
+    transform: rotateZ(90deg);
   }
 }
 

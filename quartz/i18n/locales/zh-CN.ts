@@ -20,7 +20,7 @@ export default {
       bug: "错误",
       example: "示例",
       quote: "引用",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "反向链接",
@@ -66,6 +66,7 @@ export default {
     error: {
       title: "无法找到",
       notFound: "私有笔记或笔记不存在。",
+      home: "返回首页",
     },
     folderContent: {
       folder: "文件夹",

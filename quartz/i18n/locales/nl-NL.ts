@@ -20,7 +20,7 @@ export default {
       bug: "Bug",
       example: "Voorbeeld",
       quote: "Citaat",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "Backlinks",
@@ -67,6 +67,7 @@ export default {
     error: {
       title: "Niet gevonden",
       notFound: "Deze pagina is niet zichtbaar of bestaat niet.",
+      home: "Keer terug naar de start pagina",
     },
     folderContent: {
       folder: "Map",

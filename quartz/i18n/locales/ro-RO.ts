@@ -20,7 +20,7 @@ export default {
       bug: "Bug",
       example: "Exemplu",
       quote: "Citat",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "Legături înapoi",
@@ -67,6 +67,7 @@ export default {
     error: {
       title: "Pagina nu a fost găsită",
       notFound: "Fie această pagină este privată, fie nu există.",
+      home: "Reveniți la pagina de pornire",
     },
     folderContent: {
       folder: "Dosar",

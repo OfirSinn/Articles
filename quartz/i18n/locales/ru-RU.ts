@@ -20,7 +20,7 @@ export default {
       bug: "Баг",
       example: "Пример",
       quote: "Цитата",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "Обратные ссылки",
@@ -68,6 +68,7 @@ export default {
     error: {
       title: "Страница не найдена",
       notFound: "Эта страница приватная или не существует",
+      home: "Вернуться на главную страницу",
     },
     folderContent: {
       folder: "Папка",

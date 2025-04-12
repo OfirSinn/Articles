@@ -20,7 +20,7 @@ export default {
       bug: "Lỗi",
       example: "Ví Dụ",
       quote: "Trích Dẫn",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "Liên Kết Ngược",
@@ -66,6 +66,7 @@ export default {
     error: {
       title: "Không Tìm Thấy",
       notFound: "Trang này được bảo mật hoặc không tồn tại.",
+      home: "Trở về trang chủ",
     },
     folderContent: {
       folder: "Thư Mục",

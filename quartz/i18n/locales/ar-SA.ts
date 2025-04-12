@@ -20,7 +20,7 @@ export default {
       bug: "خلل",
       example: "مثال",
       quote: "اقتباس",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "وصلات العودة",
@@ -71,6 +71,7 @@ export default {
     error: {
       title: "غير موجود",
       notFound: "إما أن هذه الصفحة خاصة أو غير موجودة.",
+      home: "العوده للصفحة الرئيسية",
     },
     folderContent: {
       folder: "مجلد",

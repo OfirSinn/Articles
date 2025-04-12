@@ -20,7 +20,7 @@ export default {
       bug: "Bug",
       example: "Esempio",
       quote: "Citazione",
-      bible: "bible",
+      bible: "Verse",
     },
     backlinks: {
       title: "Link entranti",
@@ -66,6 +66,7 @@ export default {
     error: {
       title: "Non trovato",
       notFound: "Questa pagina è privata o non esiste.",
+      home: "Ritorna alla home page",
     },
     folderContent: {
       folder: "Cartella",

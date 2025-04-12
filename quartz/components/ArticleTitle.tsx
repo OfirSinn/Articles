@@ -17,4 +17,3 @@ ArticleTitle.css = `
 `
 
 export default (() => ArticleTitle) satisfies QuartzComponentConstructor
-
