@@ -1,9 +1,15 @@
 @use "./base.scss";
-
+@use "./variables.scss" as *;
 
 @media (max-width: 410px) {
     .page-title {
-      font-size: 1.65rem;
+      font-size: 1.2rem;
     }
   }
-  
+
+.darkmode{
+    & svg{
+        top: calc(50% - 13px);
+    }
+}  
+
