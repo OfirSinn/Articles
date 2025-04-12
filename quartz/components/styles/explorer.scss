@@ -234,7 +234,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       box-sizing: border-box;
       z-index: 100;
       position: fixed;
-      top: 0;
+      top: 2;
       left: auto;
       margin-top: 0;
       background-color: var(--light);
