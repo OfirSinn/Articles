@@ -29,28 +29,28 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#ECEFF4",           // Nord Snow Storm
+          lightgray: "#D8DEE9",       // Nord Snow Storm Light
+          gray: "#B0BEC5",            // Soft gray
+          darkgray: "#4C566A",        // Nord Polar Night
+          dark: "#2E3440",            // Nord Polar Night Darker
+          secondary: "#5E81AC",       // Nord Frost
+          tertiary: "#88C0D0",        // Nord Frost Lighter
+          highlight: "rgba(136, 192, 208, 0.15)", // Subtle blue overlay
+          textHighlight: "#EBCB8B88", // Nord Aurora Yellow (translucent)
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#303446",           // Frappe Base
+          lightgray: "#414559",       // Frappe Surface0
+          gray: "#626880",            // Frappe Overlay0
+          darkgray: "#C6D0F5",        // Frappe Text
+          dark: "#F2D5CF",            // Frappe Rosewater
+          secondary: "#8CAAEE",       // Frappe Blue
+          tertiary: "#99D1DB",        // Frappe Teal
+          highlight: "rgba(140, 170, 238, 0.15)", // Subtle blue overlay
+          textHighlight: "#E5C89088", // Frappe Yellow (translucent)
         },
-      },
+      }
     },
   },
   plugins: {
