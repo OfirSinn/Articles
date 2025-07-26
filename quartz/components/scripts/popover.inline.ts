@@ -8,7 +8,7 @@ async function mouseEnterHandler(
   this: HTMLAnchorElement,
   { clientX, clientY }: { clientX: number; clientY: number },
 ) {
-  const link = this
+  const link = (activeAnchor = this)
   if (link.dataset.noPopover === "true") {
     return
   }
@@ -60,6 +60,10 @@ async function mouseEnterHandler(
   if (hasAlreadyBeenFetched()) {
     return
   }
+
+  const response = await fetchCanonical(targetUrl).catch((err) => {
+    console.error(err)
+  })
 
   if (!response) return
   const [contentType] = response.headers.get("Content-Type")!.split(";")

@@ -33,6 +33,9 @@ export default {
     explorer: {
       title: "المستعرض",
     },
+    readerMode: {
+      title: "وضع القارئ",
+    },
     footer: {
       createdWith: "أُنشئ باستخدام",
     },

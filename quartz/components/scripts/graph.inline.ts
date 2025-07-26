@@ -548,6 +548,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     app.renderer.render(stage)
     requestAnimationFrame(animate)
   }
+}
 
   requestAnimationFrame(animate)
   return () => {

@@ -30,6 +30,9 @@ export default {
       lightMode: "Modul luminos",
       darkMode: "Modul întunecat",
     },
+    readerMode: {
+      title: "Modul de citire",
+    },
     explorer: {
       title: "Explorator",
     },
