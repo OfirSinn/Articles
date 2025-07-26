@@ -3,6 +3,7 @@ import { normalizeRelativeURLs } from "../../util/path"
 import { fetchCanonical } from "./util"
 
 const p = new DOMParser()
+let activeAnchor: HTMLAnchorElement | null = null
 
 async function mouseEnterHandler(
   this: HTMLAnchorElement,
@@ -44,20 +45,10 @@ async function mouseEnterHandler(
   targetUrl.search = ""
   const popoverId = `popover-${link.pathname}`
   const prevPopoverElement = document.getElementById(popoverId)
-  const hasAlreadyBeenFetched = () => !!document.getElementById(popoverId)
 
   // dont refetch if there's already a popover
-  if (hasAlreadyBeenFetched()) {
+  if (!!document.getElementById(popoverId)) {
     showPopover(prevPopoverElement as HTMLElement)
-    return
-  }
-
-  const response = await fetchCanonical(targetUrl).catch((err) => {
-    console.error(err)
-  })
-
-  // bailout if another popover exists
-  if (hasAlreadyBeenFetched()) {
     return
   }
 
@@ -111,11 +102,20 @@ async function mouseEnterHandler(
       elts.forEach((elt) => popoverInner.appendChild(elt))
   }
 
+  if (!!document.getElementById(popoverId)) {
+    return
+  }
+
   document.body.appendChild(popoverElement)
+  if (activeAnchor !== this) {
+    return
+  }
+
   showPopover(popoverElement)
 }
 
 function clearActivePopover() {
+  activeAnchor = null
   const allPopoverElements = document.querySelectorAll(".popover")
   allPopoverElements.forEach((popoverElement) => popoverElement.classList.remove("active-popover"))
 }
