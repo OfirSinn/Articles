@@ -28,27 +28,27 @@ const config: QuartzConfig = {
         code: "IBM Plex Mono",
       },
       colors: {
-        lightMode: {
-          light: "#ECEFF4",           // Nord Snow Storm
-          lightgray: "#D8DEE9",       // Nord Snow Storm Light
-          gray: "#B0BEC5",            // Soft gray
-          darkgray: "#4C566A",        // Nord Polar Night
-          dark: "#2E3440",            // Nord Polar Night Darker
-          secondary: "#5E81AC",       // Nord Frost
+        lightMode: { // iceberg light
+          light: "#e8e9ec",           // Nord Snow Storm
+          lightgray: "#ccceda",       // Nord Snow Storm Light
+          gray: "#adb1c4",            // Soft gray
+          darkgray: "#33374c",        // Nord Polar Night
+          dark: "#262a3f",            // Nord Polar Night Darker
+          secondary: "#2d539e",       // Nord Frost
           tertiary: "#88C0D0",        // Nord Frost Lighter
-          highlight: "rgba(136, 192, 208, 0.15)", // Subtle blue overlay
-          textHighlight: "#EBCB8B88", // Nord Aurora Yellow (translucent)
+          highlight: "#ccceda", // Subtle blue overlay
+          textHighlight: "#adb1c4", // Nord Aurora Yellow (translucent)
         },
-        darkMode: {
-          light: "#303446",           // Frappe Base
-          lightgray: "#414559",       // Frappe Surface0
-          gray: "#626880",            // Frappe Overlay0
-          darkgray: "#C6D0F5",        // Frappe Text
-          dark: "#F2D5CF",            // Frappe Rosewater
-          secondary: "#8CAAEE",       // Frappe Blue
-          tertiary: "#99D1DB",        // Frappe Teal
-          highlight: "rgba(140, 170, 238, 0.15)", // Subtle blue overlay
-          textHighlight: "#E5C89088", // Frappe Yellow (translucent)
+        darkMode: { // iceberg dark
+          light: "#161821",           // background color
+          lightgray: "#232531",       // search box background
+          gray: "#595e76",            // blobs connected in the graph
+          darkgray: "#c6c8d1",        // Text
+          dark: "#d2d4de",            // Headers
+          secondary: "#84a0c6",       // color of Site Name, links, tags, and other elements
+          tertiary: "#99D1DB",        // tags in graph view
+          highlight: "#232531",       // the background of tags
+          textHighlight: "#595e76",   // ==highlight== color
         },
       }
     },
